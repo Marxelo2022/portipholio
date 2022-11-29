@@ -1,0 +1,58 @@
+
+[
+  {
+    "id": 1,
+    "category": "front",
+    "name": "Weather-App",
+    "img": "https://i.postimg.cc/zDK2x34t/wheater.png",
+    "gitHub": "https://github.com/Marxelo2022/Pronostic-App.git",
+    "web": "https://weather-forecast-by-me.netlify.app"
+  },
+
+  {
+    "id": 2,
+    "category": "front",
+    "name": "PokeApi",
+    "img": "https://i.postimg.cc/4dh2k3y3/pokedex.png",
+    "gitHub": "https://github.com/Marxelo2022/pokedex-api.git",
+    "web": "https://pokedex-appen.netlify.app"
+  },
+  {
+    "id": 3,
+    "category": "front",
+    "name": "Rick-and-Morty",
+    "img": "https://i.postimg.cc/CL0PXSgF/rickandmorty.png",
+    "gitHub": "https://github.com/Marxelo2022/Rick-and-Morty-wiki.git",
+    "web": "https://rick-and-morty-book.netlify.app"
+  },
+  {
+    "id": 4,
+    "category": "front",
+    "name": "Random-Card",
+    "img": "https://i.postimg.cc/rsXn8LRN/random.png",
+    "gitHub": "https://github.com/Marxelo2022/Random-card.git",
+    "web": "https://haikuurandom.netlify.app"
+  },
+  {
+    "id": 5,
+    "category": "back",
+    "name": "Server Products",
+    "img": "https://cdn-icons-png.flaticon.com/512/103/103093.png",
+    "gitHub": "https://github.com/Marxelo2022/server-products.git"
+  },
+
+  {
+    "id": 6,
+    "category": "back",
+    "name": "Skeleton",
+    "img": "https://cdn-icons-png.flaticon.com/512/103/103093.png",
+    "gitHub": "https://github.com/Marxelo2022/skeleton_server.git"
+  },
+  {
+    "id": 7,
+    "category": "back",
+    "name": "Recipe Api",
+    "img": "https://cdn-icons-png.flaticon.com/512/103/103093.png",
+    "gitHub": "https://github.com/Marxelo2022/recipes_api.git"
+  }
+]

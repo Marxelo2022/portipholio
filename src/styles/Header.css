@@ -1,0 +1,277 @@
+header {
+  width: 100%;
+  padding: 10vh 0 0;
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 40px;
+}
+
+header > div {
+  position: relative;
+  padding: 50px;
+  background-color: var(--solid-color);
+  border-radius: 0 0 15px 15px;
+}
+
+.background {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+}
+
+.background > div {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://blog.centrodeelearning.com/wp-content/uploads/2021/05/programmer-or-computer-hacker-typing-on-laptop-key-PSAN67J.png");
+  background-position: center;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+  background-size: cover;
+  clip-path: polygon(
+    10% 0,
+    90% 0,
+    100% 20%,
+    100% 80%,
+    60% 100%,
+    40% 100%,
+    0% 80%,
+    0% 20%
+  );
+  z-index: 100;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 190;
+  min-height: 500px;
+}
+
+.presentation > div {
+  width: 150px;
+  height: 150px;
+  margin: 80px 0 20px;
+  border: 3px solid var(--solid-color);
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 5;
+  overflow: hidden;
+  background-color: var(--body-color);
+}
+
+.presentation > div img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.presentation h1 {
+  font-size: 34px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.presentation h2 {
+  font-size: 1rem;
+  color: var(--subtitle-color);
+  margin-bottom: 10px;
+}
+
+.presentation ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  height: 50px;
+}
+
+.presentation ul li a i {
+  color: var(--subtitle-color);
+  font-size: 1.5rem;
+  transition: 0.2s;
+  display: block;
+  padding: 5px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: var(--border-radius);
+}
+
+.presentation ul li a:hover i {
+  margin-top: 5px;
+}
+
+.presentation ul li a:focus i {
+  font-size: 1.3rem;
+}
+
+.btnCvContact {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-header {
+  width: 140px;
+  height: 50px;
+  border: 2px solid var(--primary-color);
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: var(--primary-color);
+  cursor: pointer;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-header::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--primary-color);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.btn-header:hover::before {
+  width: 105%;
+}
+
+.btn-header:hover {
+  color: var(--input-bg);
+}
+
+button svg {
+  margin-right: 5px;
+  height: 16px;
+}
+
+button svg polyline,
+button svg line {
+  animation: docs 1s infinite;
+}
+
+.background article {
+  width: 50px;
+  height: 2em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.switch {
+  --size-of-icon: 1.4em;
+  --slider-offset: 0.3em;
+  position: relative;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 560px) {
+  header {
+    padding: 20px 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  header > div {
+    width: 85%;
+    border-radius: 10px;
+  }
+  .background {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1100px) {
+  header {
+    margin: 30px 0 0 70px;
+  }
+  header > div {
+    width: 500px;
+  }
+}

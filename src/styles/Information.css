@@ -1,0 +1,210 @@
+.education ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-education {
+  width: 95%;
+  margin-left: 5px;
+}
+
+.card-education span {
+  display: block;
+  width: 140px;
+  text-align: center;
+  font-size: 10px;
+  padding: 3px 10px;
+  border: 1px solid var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+
+.card-education h4 {
+  font-size: 14px;
+  margin: 10px 0;
+  color: var(--tertiary-color);
+}
+
+.card-education h6 {
+  font-size: 12px;
+  margin: 10px 0 10px 10px;
+  color: #8c8888;
+}
+
+.card-education p {
+  font-size: 14px;
+  color: #b5b5b5;
+}
+
+.skill > h2 {
+  margin-top: 20px;
+}
+
+.skill > p {
+  margin-left: 5px;
+  width: 95%;
+}
+
+.code-skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin-left: 10px;
+}
+
+.code-skills-card {
+  position: relative;
+  background-color: var(--body-color);
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.code-skills-card input {
+  appearance: none;
+}
+
+.code-skills-card label {
+  display: flex;
+  align-items: center;
+}
+
+.code-skills-card label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+
+.code-skills-card:hover label::after {
+  color: #333;
+}
+
+.code-skills-card input:checked ~ label::after {
+  transform: rotate(135deg);
+  color: #fff;
+}
+
+.code-skills-card label h4 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.code-skills-card input:checked ~ label h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8em;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.code-skills-card:nth-child(1) label h4 {
+  background: linear-gradient(135deg, #32d4a4, #5332d4);
+}
+
+.code-skills-card:nth-child(2) label h4 {
+  background: linear-gradient(135deg, #32d4a4, #3262d4);
+}
+
+.code-skills-card:nth-child(3) label h4 {
+  background: linear-gradient(135deg, #32d4a4, #d432b3);
+}
+
+.code-skills-card label h5 {
+  position: relative;
+  font-weight: 700;
+  color: var(--tertiary-color);
+  z-index: 5;
+}
+
+.code-skills-card input:checked ~ label h5 {
+  background-color: #fff;
+  padding: 2px 10px;
+  color: #333;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.code-skills-card .code-skill-content {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.code-skills-card input:checked ~ .code-skill-content {
+  max-height: 100vh;
+}
+
+.code-skills-card .code-skill-content ul {
+  position: relative;
+  padding: 10px 0;
+  color: var(--tertiary-color);
+  z-index: 5;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  width: 85%;
+  margin-top: 10px;
+}
+
+.code-skills-card .code-skill-content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code-skills-card .code-skill-content ul li i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.code-skills-card .code-skill-content ul li img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.code-skills-card .code-skill-content ul li span {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.code-skills-card input:checked ~ .code-skill-content ul {
+  color: var(--tertiary-color);
+}
+
+.soft-skill ul {
+  margin-left: 10px;
+  width: 90%;
+  gap: 10px;
+}
+
+.soft-skill ul li {
+  color: var(--paragraph-color);
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.soft-skill ul li i {
+  color: var(--tertiary-color);
+}
